@@ -60,7 +60,10 @@ The performance of the models was evaluated using standard metrics including Acc
 | **Hybrid Voting Classifier (Extension)** | **97.63%** | **0.97** | **0.98** |
 
 ## Automated Notification & Reporting
-The system is integrated with an **SMTP Email Service**.
+The system is integrated with an **SMTP Email Service** to ensure seamless communication of results. Once the prediction is generated:
+* The user receives a detailed email containing their anaemia status and confidence.
+* The email clearly states the predicted risk status (**Anaemic** or **Not Anaemic**).
+* It includes the model's confidence score and XAI-driven insights to ensure the user is well-informed about the prediction's basis.
 
 ## Installation & Setup
 
@@ -84,9 +87,9 @@ The application will be available at http://localhost:5000
 
 ## Contributing
 1. Fork the Project.
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the Branch (`git push origin feature/AmazingFeature`).
+2. Create your Feature Branch.
+3. Commit your Changes.
+4. Push to the Branch.
 5. Open a Pull Request.
 
 ---
